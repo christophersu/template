@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "scraping-template",
   "parse": [
     "PROJECT-README"
   ],
@@ -9,5 +9,7 @@
   ],
   "move": [
     { "PROJECT-README": "README.md" },
+    { "module_init.py": "{{ name }}/__init__.py" },
+    { "module_code.py": "{{ name }}/{{ name }}.py" },
   ]
 }
